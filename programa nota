@@ -1,0 +1,19 @@
+#curso python - colégio irene
+#programa calcular média simples
+#professor orlando
+#autor: leandro A.
+#data: 04°/10/24 versão 1.0
+#alteração 04/10/24
+nome = input("Qual seu nome?: ")
+nota1 = float(input("qual sua 1° nota: "))
+nota2 = float(input("qual sua 2° nota: "))
+nota3 = float(input("qual sua 3° nota: "))
+nota4 = float(input("qual sua 4° nota: "))
+media=(nota1 + nota2 + nota3 + nota4) /4
+print(" a media é ", media)
+if media >=7:
+    print("aprovado")
+elif media >=5:
+    print("recuperação")
+else:
+    print("reprovado")
