@@ -1,0 +1,13 @@
+
+lista_nome=[]
+lista_qtde_horas=[]
+lista_vl_hora=[]
+while True:
+    vnome=input("Digite o nome funcionário ou x para sair: ")
+    if vnome.lower()=="x":
+        break
+    vqtdehora=int(input("Quantidade de horas: "))
+    vlhora=int(input("Valor da hora: "))
+    lista_nome.append(vnome)
+    lista_qtde_horas.append(vqtdehora)
+    lista_vl_hora.append(vlhora)
