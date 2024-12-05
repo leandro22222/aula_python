@@ -1,0 +1,264 @@
+DQL (Data Query Language) é um subconjunto da SQL que lida exclusivamente com consultas de dados em bancos relacionais. O comando principal de DQL é o SELECT, usado para buscar informações de uma ou mais tabelas. 
+
+Principais Comandos DQL 
+
+1. SELECT - Consultar dados 
+
+O comando mais básico para recuperar informações de uma tabela. 
+
+Exemplo: 
+
+Selecionar todos os dados de uma tabela: 
+
+sql 
+
+Copiar código 
+
+SELECT * FROM clientes; 
+ 
+
+ 
+
+Extensões do SELECT 
+
+a. Selecionar colunas específicas 
+
+Recupera apenas as colunas desejadas. 
+
+sql 
+
+Copiar código 
+
+SELECT nome, idade FROM clientes; 
+ 
+
+ 
+
+b. Filtrar registros com WHERE 
+
+Aplica condições para restringir os dados retornados. 
+
+sql 
+
+Copiar código 
+
+SELECT nome, idade  
+FROM clientes  
+WHERE idade > 30; 
+ 
+
+ 
+
+c. Ordenar resultados com ORDER BY 
+
+Organiza os resultados em ordem ascendente (ASC) ou descendente (DESC). 
+
+sql 
+
+Copiar código 
+
+SELECT nome, idade  
+FROM clientes  
+ORDER BY idade DESC; 
+ 
+
+ 
+
+d. Limitar o número de registros com LIMIT (ou TOP no SQL Server) 
+
+Controla a quantidade de registros retornados. 
+
+MySQL/PostgreSQL: 
+
+sql 
+
+Copiar código 
+
+SELECT *  
+FROM clientes  
+LIMIT 5; 
+ 
+
+SQL Server: 
+
+sql 
+
+Copiar código 
+
+SELECT TOP 5 *  
+FROM clientes; 
+ 
+
+ 
+
+e. Usar aliases com AS 
+
+Renomeia colunas ou tabelas no resultado da consulta. 
+
+sql 
+
+Copiar código 
+
+SELECT nome AS "Nome do Cliente", idade AS "Idade" 
+FROM clientes; 
+ 
+
+SQL 
+
+SQL (Structured Query Language) serve para interagir com bancos de dados relacionais. Ele é utilizado para criar, modificar, consultar e manipular os dados armazenados nesses bancos, além de gerenciar a estrutura do banco de dados. É uma ferramenta essencial para desenvolvedores, analistas de dados e administradores de banco de dados, pois possibilita trabalhar com grandes volumes de dados de forma eficiente. 
+
+Em SQL, subconjuntos referem-se a partes específicas de dados extraídas de uma tabela ou conjunto de tabelas. Esses subconjuntos são criados usando comandos que filtram, agrupam, ordenam ou combinam dados conforme necessário. Aqui estão algumas maneiras de criar subconjuntos em SQL: 
+
+SUB CONJUNTOS 
+
+1. Filtragem de Linhas com WHERE 
+
+Extrai registros que atendem a condições específicas. 
+
+Exemplo: 
+
+Obter clientes com mais de 30 anos: 
+
+sql 
+
+Copiar código 
+
+SELECT *  
+FROM clientes 
+WHERE idade > 30; 
+ 
+
+2. Selecionar Colunas Específicas 
+
+Cria subconjuntos baseados em colunas específicas, sem precisar trazer todas as informações. 
+
+Exemplo: 
+
+Selecionar apenas nome e e-mail dos clientes: 
+
+sql 
+
+Copiar código 
+
+SELECT nome, email  
+FROM clientes; 
+ 
+
+3. Agrupamento de Dados com GROUP BY 
+
+Agrupa dados semelhantes em subconjuntos. 
+
+Exemplo: 
+
+Contar quantos pedidos foram feitos por cada cliente: 
+
+sql 
+
+Copiar código 
+
+SELECT cliente_id, COUNT(*) AS total_pedidos 
+FROM pedidos 
+GROUP BY cliente_id; 
+
+ 
+
+DQL (Data Query Language) é um subconjunto da SQL que lida exclusivamente com consultas de dados em bancos relacionais. O comando principal de DQL é o SELECT, usado para buscar informações de uma ou mais tabelas. 
+
+Principais Comandos DQL 
+
+1. SELECT - Consultar dados 
+
+O comando mais básico para recuperar informações de uma tabela. 
+
+Exemplo: 
+
+Selecionar todos os dados de uma tabela: 
+
+sql 
+
+Copiar código 
+
+SELECT * FROM clientes; 
+ 
+
+Extensões do SELECT 
+
+a. Selecionar colunas específicas 
+
+Recupera apenas as colunas desejadas. 
+
+sql 
+
+Copiar código 
+
+SELECT nome, idade FROM clientes; 
+ 
+
+b. Filtrar registros com WHERE 
+
+Aplica condições para restringir os dados retornados. 
+
+sql 
+
+Copiar código 
+
+SELECT nome, idade  
+FROM clientes  
+WHERE idade > 30; 
+ 
+
+c. Ordenar resultados com ORDER BY 
+
+Organiza os resultados em ordem ascendente (ASC) ou descendente (DESC). 
+
+sql 
+
+Copiar código 
+
+SELECT nome, idade  
+FROM clientes 
+
+ORDER BY idade DESC; 
+ 
+
+d. Limitar o número de registros com LIMIT (ou TOP no SQL Server) 
+
+Controla a quantidade de registros retornados. 
+
+MySQL/PostgreSQL: 
+
+sql 
+
+Copiar código 
+
+SELECT *  
+FROM clientes  
+LIMIT 5; 
+ 
+
+SQL Server: 
+
+sql 
+
+Copiar código 
+
+SELECT TOP 5 *  
+FROM clientes; 
+ 
+
+e. Usar aliases com AS 
+
+Renomeia colunas ou tabelas no resultado da consulta. 
+
+sql 
+
+Copiar código 
+
+SELECT nome AS "Nome do Cliente", idade AS "Idade" 
+FROM clientes; 
+ 
+
+ 
+ 
+
+ 
